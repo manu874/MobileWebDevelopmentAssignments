@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(59, 23, 220);
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(19, 21, 21);
+}
+
+label{
+    font-family: 'Kanit', sans-serif;
+    display: block;
+    margin-left: 15px;
+    }
+
+fieldset{
+    border: 2px rgb(69, 189, 99);
+    margin: 30px;
+}
+
+legend{
+    margin-left: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+select{
+    font-family: 'Kanit', sans-serif;
+}
+@media (max-width: 600px) {
+    body {
+        background-color: #FF5733; 
+    }
+    label {
+        font-size: 1.2em;
+    }
+    form{
+        background-color: rgb(47, 29, 207);
+        margin: auto;
+        max-width: 700px;
+        border: 2px solid black;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+}
+@media (min-width: 601px) {
+    body {
+        background-color: #c219ae; 
+    }
+    label {
+        display: inline-block;
+        width: 40%;
+        text-align: right;
+        padding: 10px;
+        font-size: 1.0em;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+       textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    input[type="checkbox"] {
+        width: auto;
+    }
+    form{
+        background-color: rgb(75, 165, 18);
+        margin: auto;
+        max-width: 700px;
+        border: 2px solid black;
+    }
+    
+}
