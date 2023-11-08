@@ -1,0 +1,73 @@
+.swiper-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FF5733;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFC300;
+    border: 1px solid #333;
+    color: #000;
+}
+
+body {
+    background-color: #FFA500;
+}
+
+h1 {
+    font-size: 23px;
+    color: #FF5733;
+    text-align: center;
+}
+
+label,
+textarea {
+    font-size: 13px;
+    color: #8B4513;
+}
+
+form {
+    background-color: #7FFF00;
+}
+
+h2 {
+    font-size: 18px;
+    color: #8B0000;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #00FFFF;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #00008B;
+    }
+
+    label {
+        display: block;
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        height: auto;
+    }
+}
