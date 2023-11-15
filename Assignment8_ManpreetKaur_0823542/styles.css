@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(186, 128, 58, 0.85);
+}
+h1 {
+    font-size: 3em;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(190, 234, 87);
+    text-align: center;
+    margin: 15px 10px;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(163, 87, 234);
+    text-align: center;
+    margin: 15px 10px;
+}
+p {
+text-align: justify;
+line-height: 1.5;
+font-size: 1.5em;
+color: rgb(226, 79, 211);
+}
+footer {
+    height:48px;  
+    background-color: rgba(229, 53, 22, 0.845)
+}
+
+footer p {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(48, 0, 50);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 6px 0px;
+}
+@media screen and (max-width:1024px){
+    body{ background-color:rgb(213, 232, 216);
+ }
+ 
+ }
+ @media screen and (max-width:600px){
+    body{ background: rgb(31, 200, 212);
+     background: linear-gradient(90deg, rgb(0, 69, 112) 0%, rgb(26, 115, 94) 35%, rgb(64, 255, 0) 100%);
+ }
+ 
+ }
