@@ -1,0 +1,97 @@
+body {
+  background-color: burlywood;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #6f3563;
+  }
+  header nav {
+    display: flex;
+    align-content: flex-start;
+}
+header h1 {
+  font-size:medium;
+  text-align: center;
+  color: lightblue;
+}
+  nav ul {
+    margin-left: 90px;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 20px;
+  }
+  nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5b8c5a;
+    font-size: 15px;
+    font-weight: bold;
+  }
+   section{
+    background-color: #bfcf45;
+    max-width: 992px;
+    margin: 10px auto;
+  }
+  section h1 {
+    font-size: x-large;
+}
+
+section p {
+    text-transform: capitalize;
+    font-size: larger;
+    color: darkblue;
+}
+ section ul li{
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin: 2px;
+  border: 2px solid black;
+}
+ section ul li img{
+  width: 100%;
+  height: 100%;
+}
+section:first-of-type {
+  display: flex;
+  flex-direction: row-reverse;
+}
+div {
+  width: 100%;
+}
+div a {
+  width: 20px;
+}
+section:last-of-type h1 {
+  text-align: center;
+  background-color: darkred;
+}
+
+section:last-of-type p {
+  text-align: center;
+}
+
+footer>p{
+  text-transform: uppercase;
+  background-color: black;
+  color: rgb(72, 92, 112);
+  text-align: center;
+  font-size: 1.0em;
+  padding: 10px;
+
+}
+
+@media screen and (max-width: 1024px) {
+  main section{
+    background-color: #cf9845;
+  }  
+}
+@media screen and (max-width: 600px) {
+    main section {
+        background-color: #433a57;
+    }
+}
