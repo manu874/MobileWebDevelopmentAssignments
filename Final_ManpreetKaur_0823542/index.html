@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manpreet Kaur's Weather Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-cloud-sun"></i> WeatherApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-outline-primary">Hourly</button>
+                <button type="button" class="btn btn-outline-secondary">Weekly</button>
+                <button type="button" class="btn btn-outline-success">Monthly</button>
+            </div>
+            <div class="col-md-6">
+                <form class="form-inline my-2 my-lg-0 float-right">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#weatherCollapse" aria-expanded="false" aria-controls="weatherCollapse">
+            Windsor
+        </button>
+        <div class="collapse" id="weatherCollapse">
+            <div class="card card-body mt-3">
+                Today's Forecast: Todays weather was cloudly, rain is expected.
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Maximum Temperature</th>
+                    <th>Minimum Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>30°C</td>
+                    <td>20°C</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>28°C</td>
+                    <td>18°C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/sunny.jpg" class="img-fluid" alt="Sunny"></div>
+            <div class="swiper-slide"><img src="images/snow.jpg" class="img-fluid" alt="snow"></div>
+            <div class="swiper-slide"><img src="images/rain.jpg" class="img-fluid" alt="Rain"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>
